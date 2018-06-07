@@ -51,8 +51,10 @@ class LampsVC: UIViewController {
         let lightState = PHSLightState()
         
         lightState.on = true
-        lightState.hue = Int(arc4random_uniform(UInt32(65535))) as NSNumber
-        lightState.brightness = Int(arc4random_uniform(UInt32(254))) as NSNumber
+        //lightState.hue = Int(arc4random_uniform(UInt32(65535))) as NSNumber
+        lightState.hue = 0
+        lightState.brightness = 127
+        lightState.saturation = 254
         
         return lightState
     }
@@ -64,29 +66,47 @@ class LampsVC: UIViewController {
     
     @IBAction func randomizeLights(_ sender: UIButton) {
         
-        if let devices = bridge.bridgeState.getDevicesOf(.light) as? [PHSDevice] {
+        let device = bridge.bridgeState.getDeviceOf(.light, withIdentifier: "4")
+        if let lightPoint = device as? PHSLightPoint {
+            let lightState = self.lightStateWithRandomColors()
             
-            for device in devices {
+            lightPoint.update(lightState, allowedConnectionTypes: .local, completionHandler: { (responses, errors, returnCode) in
                 
-                if let lightPoint = device as? PHSLightPoint {
-                    
-                    let lightState = self.lightStateWithRandomColors()
-                    
-                    lightPoint.update(lightState, allowedConnectionTypes: .local, completionHandler: { (responses, errors, returnCode) in
-                        
-                        if errors != nil {
-                            
-                            for error in errors! {
-                                
-                                print(error.debugDescription)
-                            }
-                        }
-                        
-                    })
-                }
-            }
-            
+                                        if errors != nil {
+                
+                                            for error in errors! {
+                
+                                                print(error.debugDescription)
+                                            }
+                                        }
+                
+                                  })
         }
+        
+        
+//        if let devices = bridge.bridgeState.getDevicesOf(.light) as? [PHSDevice] {
+//
+//            for device in devices {
+//                print(device.deviceInfo)
+//                if let lightPoint = device as? PHSLightPoint {
+//
+//                    let lightState = self.lightStateWithRandomColors()
+//
+//                    lightPoint.update(lightState, allowedConnectionTypes: .local, completionHandler: { (responses, errors, returnCode) in
+//
+//                        if errors != nil {
+//
+//                            for error in errors! {
+//
+//                                print(error.debugDescription)
+//                            }
+//                        }
+//
+//                    })
+//                }
+//            }
+//
+//        }
         
     }
    
