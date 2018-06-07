@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8344E33420C165B4009DC075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E33320C165B4009DC075 /* AppDelegate.swift */; };
+		8344E33620C165B4009DC075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E33520C165B4009DC075 /* ViewController.swift */; };
+		8344E33920C165B4009DC075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8344E33720C165B4009DC075 /* Main.storyboard */; };
+		8344E33B20C165B6009DC075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8344E33A20C165B6009DC075 /* Assets.xcassets */; };
+		8344E33E20C165B6009DC075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8344E33C20C165B6009DC075 /* LaunchScreen.storyboard */; };
+		8344E34620C166ED009DC075 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8344E34520C166ED009DC075 /* HueSDK.framework */; };
+		8344E34720C166ED009DC075 /* HueSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8344E34520C166ED009DC075 /* HueSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8344E34E20C16AFA009DC075 /* LampsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E34D20C16AFA009DC075 /* LampsVC.swift */; };
+		8344E35020C16B15009DC075 /* PushLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E34F20C16B15009DC075 /* PushLinkVC.swift */; };
+		8344E35220C16B41009DC075 /* BridgeSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E35120C16B41009DC075 /* BridgeSelectionVC.swift */; };
+		8344E35420C17680009DC075 /* PHBridgeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344E35320C17680009DC075 /* PHBridgeInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8344E34820C166ED009DC075 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8344E34720C166ED009DC075 /* HueSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8344E33020C165B4009DC075 /* PhilipsHueProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilipsHueProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8344E33320C165B4009DC075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8344E33520C165B4009DC075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8344E33820C165B4009DC075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8344E33A20C165B6009DC075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8344E33D20C165B6009DC075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8344E33F20C165B6009DC075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8344E34520C166ED009DC075 /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK.framework; sourceTree = "<group>"; };
+		8344E34920C168FB009DC075 /* PhilipsHueProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhilipsHueProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		8344E34D20C16AFA009DC075 /* LampsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampsVC.swift; sourceTree = "<group>"; };
+		8344E34F20C16B15009DC075 /* PushLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushLinkVC.swift; sourceTree = "<group>"; };
+		8344E35120C16B41009DC075 /* BridgeSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeSelectionVC.swift; sourceTree = "<group>"; };
+		8344E35320C17680009DC075 /* PHBridgeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHBridgeInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8344E32D20C165B4009DC075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8344E34620C166ED009DC075 /* HueSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8344E32720C165B4009DC075 = {
+			isa = PBXGroup;
+			children = (
+				8344E34520C166ED009DC075 /* HueSDK.framework */,
+				8344E33220C165B4009DC075 /* PhilipsHueProject */,
+				8344E33120C165B4009DC075 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8344E33120C165B4009DC075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8344E33020C165B4009DC075 /* PhilipsHueProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8344E33220C165B4009DC075 /* PhilipsHueProject */ = {
+			isa = PBXGroup;
+			children = (
+				8344E34C20C16AAD009DC075 /* ViewController */,
+				8344E33320C165B4009DC075 /* AppDelegate.swift */,
+				8344E33520C165B4009DC075 /* ViewController.swift */,
+				8344E33720C165B4009DC075 /* Main.storyboard */,
+				8344E33A20C165B6009DC075 /* Assets.xcassets */,
+				8344E33C20C165B6009DC075 /* LaunchScreen.storyboard */,
+				8344E33F20C165B6009DC075 /* Info.plist */,
+				8344E34920C168FB009DC075 /* PhilipsHueProject-Bridging-Header.h */,
+				8344E35320C17680009DC075 /* PHBridgeInfo.swift */,
+			);
+			path = PhilipsHueProject;
+			sourceTree = "<group>";
+		};
+		8344E34C20C16AAD009DC075 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8344E34D20C16AFA009DC075 /* LampsVC.swift */,
+				8344E34F20C16B15009DC075 /* PushLinkVC.swift */,
+				8344E35120C16B41009DC075 /* BridgeSelectionVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8344E32F20C165B4009DC075 /* PhilipsHueProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8344E34220C165B6009DC075 /* Build configuration list for PBXNativeTarget "PhilipsHueProject" */;
+			buildPhases = (
+				8344E32C20C165B4009DC075 /* Sources */,
+				8344E32D20C165B4009DC075 /* Frameworks */,
+				8344E32E20C165B4009DC075 /* Resources */,
+				8344E34820C166ED009DC075 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsHueProject;
+			productName = PhilipsHueProject;
+			productReference = 8344E33020C165B4009DC075 /* PhilipsHueProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8344E32820C165B4009DC075 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = dk.anderstofte;
+				TargetAttributes = {
+					8344E32F20C165B4009DC075 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 8344E32B20C165B4009DC075 /* Build configuration list for PBXProject "PhilipsHueProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8344E32720C165B4009DC075;
+			productRefGroup = 8344E33120C165B4009DC075 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8344E32F20C165B4009DC075 /* PhilipsHueProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8344E32E20C165B4009DC075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8344E33E20C165B6009DC075 /* LaunchScreen.storyboard in Resources */,
+				8344E33B20C165B6009DC075 /* Assets.xcassets in Resources */,
+				8344E33920C165B4009DC075 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8344E32C20C165B4009DC075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8344E35420C17680009DC075 /* PHBridgeInfo.swift in Sources */,
+				8344E33620C165B4009DC075 /* ViewController.swift in Sources */,
+				8344E33420C165B4009DC075 /* AppDelegate.swift in Sources */,
+				8344E35020C16B15009DC075 /* PushLinkVC.swift in Sources */,
+				8344E34E20C16AFA009DC075 /* LampsVC.swift in Sources */,
+				8344E35220C16B41009DC075 /* BridgeSelectionVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8344E33720C165B4009DC075 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8344E33820C165B4009DC075 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8344E33C20C165B6009DC075 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8344E33D20C165B6009DC075 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8344E34020C165B6009DC075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8344E34120C165B6009DC075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8344E34320C165B6009DC075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2525Q2NZ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhilipsHueProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.anderstofte.PhilipsHueProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsHueProject/PhilipsHueProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8344E34420C165B6009DC075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2525Q2NZ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhilipsHueProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.anderstofte.PhilipsHueProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsHueProject/PhilipsHueProject-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8344E32B20C165B4009DC075 /* Build configuration list for PBXProject "PhilipsHueProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8344E34020C165B6009DC075 /* Debug */,
+				8344E34120C165B6009DC075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8344E34220C165B6009DC075 /* Build configuration list for PBXNativeTarget "PhilipsHueProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8344E34320C165B6009DC075 /* Debug */,
+				8344E34420C165B6009DC075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8344E32820C165B4009DC075 /* Project object */;
+}
